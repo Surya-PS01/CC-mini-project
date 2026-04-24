@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Compress</title>
+
+    <link rel="stylesheet" href="huffman.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="navbar">
+    <h2>Huffman</h2>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="compress.html">Compress</a>
+        <a href="decompress.html">Decompress</a>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="big-card">
+        <h2>Encode Your Message</h2>
+        <p class="subtext">
+            Enter your text below and compress it using Huffman Coding.
+        </p>
+
+        <textarea id="inputText" placeholder="Enter your message here..."></textarea>
+
+        <button type="button" onclick="compress()">Compress</button>
+
+        <div class="stats-box">
+            <div class="stat">
+                <span>Original Size</span>
+                <h3 id="originalSize">0 bits</h3>
+            </div>
+
+            <div class="stat">
+                <span>Compressed Size</span>
+                <h3 id="compressedSize">0 bits</h3>
+            </div>
+
+            <div class="stat">
+                <span>Compression</span>
+                <h3 id="compressionRatio">0%</h3>
+            </div>
+        </div>
+
+        <h3>Compressed Binary</h3>
+        <textarea id="binaryOutput" readonly></textarea>
+
+        <h3>Huffman Mapping</h3>
+        <pre id="mapOutput"></pre>
+
+        <h3>Encoded Package (Base64)</h3>
+        <textarea id="encodedOutput" readonly></textarea>
+    </div>
+
+</div>
+
+<script src="huffman.js"></script>
+
+</body>
+</html>

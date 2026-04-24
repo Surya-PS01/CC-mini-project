@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Decompress</title>
+
+    <link rel="stylesheet" href="huffman.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="navbar">
+    <h2>Huffman</h2>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="compress.html">Compress</a>
+        <a href="decompress.html">Decompress</a>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="big-card">
+        <h2>Decode Your Message</h2>
+        <p class="subtext">
+            Paste your encoded Base64 string below to recover the original message.
+        </p>
+
+        <textarea id="decodeInput" placeholder="Paste Base64 encoded data here..."></textarea>
+
+        <button type="button" onclick="decompress()">Decompress</button>
+
+        <h3>Original Message</h3>
+        <textarea id="decodedText" readonly></textarea>
+    </div>
+
+</div>
+
+<script src="huffman.js"></script>
+
+</body>
+</html>
